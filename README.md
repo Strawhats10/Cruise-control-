@@ -48,19 +48,19 @@ The following graphs illustrate the behavior of the ACC system in different scen
 
 Relative Distance and Velocity Graph:
 ![image alt](Relative_distance_and_velocity_graph.png)
-Relative distance and velocity graph Fig.3 Relative distance and velocity graph
+ Fig.3 Relative distance and velocity graph
 
 This graph provides an understanding of the inter-vehicular distance and velocity over time.
 
 # Free Driving Mode Scenario:
 ![image alt](Free_Driving_Mode_Scenario.png)
-Free driving mode scenario Fig.4a Free driving mode Scenario
+ Fig.4a Free driving mode Scenario
 
 This scenario depicts the free driving mode when the relative vehicle distance is 20 m. In this mode, the follower vehicle's velocity gradually increases as it approaches the rear of the leader vehicle.
 
 # Adaptive Cruise Mode Scenario:
 ![image alt](Adaptive_cruise_mode_Scenario.png)
-Adaptive cruise mode scenario Fig.4b Adaptive cruise mode Scenario
+ Fig.4b Adaptive cruise mode Scenario
 
 This scenario shows the Adaptive Cruise Control mode, which activates when the relative vehicle distance falls below 10 m. The follower vehicle maintains a safe distance from the leader vehicle with an optimum speed profile determined by the MPC control module.
 
