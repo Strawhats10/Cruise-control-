@@ -74,5 +74,4 @@ Open the main Simulink model file.
 Set the required parameters and initial conditions.
 
 Run the simulation to observe the ACC system's behavior.
-
 Feel free to explore and modify the model as per your requirements
