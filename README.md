@@ -7,25 +7,27 @@ The Adaptive Cruise Control (ACC) System developed in MATLAB and Simulink utiliz
 # Model Design
 The following steps provide an overview of how the complete ACC model was designed from scratch:
 
-1. Developing Preliminary Vehicle Model:
+1.Developing Preliminary Vehicle Model:
 
 * A transfer function is used to convert acceleration to speed, simulating the gas pedal's effect on the vehicle's acceleration.
 * An integrator block is added to model the integration of acceleration to obtain speed.
 * A first-order low-pass filter is used to modify, reshape, or reject unwanted frequencies in the acceleration signal.
 * A saturation block is introduced to mimic realistic acceleration and deceleration characteristics of actual vehicles.
-2. Using Linear MPC to Model ACC:
+2.Using Linear MPC to Model ACC:
 
 * The model obtains the relative distance between the leader and follower vehicle.
 * The MPC block takes inputs such as set velocity, time gap, longitudinal velocity, and relative distance, and provides longitudinal acceleration as output.
-3. Tuning MPC:
+3.Tuning MPC:
 
-This step focuses on optimizing the computation time and robustness of the MPC block.
-Sample time and prediction horizon steps are adjusted to achieve efficient control.
+ This step focuses on optimizing the computation time and robustness of the MPC block.
+ Sample time and prediction horizon steps are adjusted to achieve efficient control.
 A stop block is introduced to halt the simulation if the relative distance falls below 0, indicating a potential collision.
+
 4. VR Sink Block and Signal Expander Block:
 
 The VR sink block is fed a .WRL extension file representing the environment, where vehicles are designed using the VR-Realm editor.
 The signal expander matches the signal dimensions with the VR sink block, enabling the longitudinal velocity vector to control the axis of movement.
+
 # Vehicle Behavior Planner using Stateflow
 The ACC system includes different driving modes to ensure safe and smooth driving based on the relative distance between the leader and follower vehicle.
 ![image alt](Stateflow_sequence_viewer.png)
