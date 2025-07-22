@@ -7,17 +7,17 @@ The Adaptive Cruise Control (ACC) System developed in MATLAB and Simulink utiliz
 # Model Design
 The following steps provide an overview of how the complete ACC model was designed from scratch:
 
-Developing Preliminary Vehicle Model:
+# Developing Preliminary Vehicle Model:
 
-A transfer function is used to convert acceleration to speed, simulating the gas pedal's effect on the vehicle's acceleration.
-An integrator block is added to model the integration of acceleration to obtain speed.
-A first-order low-pass filter is used to modify, reshape, or reject unwanted frequencies in the acceleration signal.
-A saturation block is introduced to mimic realistic acceleration and deceleration characteristics of actual vehicles.
-Using Linear MPC to Model ACC:
+* A transfer function is used to convert acceleration to speed, simulating the gas pedal's effect on the vehicle's acceleration.
+* An integrator block is added to model the integration of acceleration to obtain speed.
+* A first-order low-pass filter is used to modify, reshape, or reject unwanted frequencies in the acceleration signal.
+* A saturation block is introduced to mimic realistic acceleration and deceleration characteristics of actual vehicles.
+# Using Linear MPC to Model ACC:
 
-The model obtains the relative distance between the leader and follower vehicle.
-The MPC block takes inputs such as set velocity, time gap, longitudinal velocity, and relative distance, and provides longitudinal acceleration as output.
-Tuning MPC:
+* The model obtains the relative distance between the leader and follower vehicle.
+* The MPC block takes inputs such as set velocity, time gap, longitudinal velocity, and relative distance, and provides longitudinal acceleration as output.
+# Tuning MPC:
 
 This step focuses on optimizing the computation time and robustness of the MPC block.
 Sample time and prediction horizon steps are adjusted to achieve efficient control.
