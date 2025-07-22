@@ -2,7 +2,7 @@
 # Overview
 The Adaptive Cruise Control (ACC) System developed in MATLAB and Simulink utilizes Model Predictive Control (MPC) to enable longitudinal speed control for the follower vehicle over a range of speed profiles. The ACC system aims to maintain a safe distance from the leader vehicle while optimizing the gas pedal actuation sequence for a comfortable ride with minimal overshoot.
 ![image alt](Simulink_Model_of_Adaptive_Cruise_Control_System.png)
-Simulink Model of ACC System Fig.1 Simulink Model of Adaptive Cruise Control System
+ Fig.1 Simulink Model of Adaptive Cruise Control System
 
 # Model Design
 The following steps provide an overview of how the complete ACC model was designed from scratch:
@@ -28,8 +28,8 @@ The VR sink block is fed a .WRL extension file representing the environment, whe
 The signal expander matches the signal dimensions with the VR sink block, enabling the longitudinal velocity vector to control the axis of movement.
 Vehicle Behavior Planner using Stateflow
 The ACC system includes different driving modes to ensure safe and smooth driving based on the relative distance between the leader and follower vehicle.
-![image alt]()
-Stateflow sequence viewer Fig.2 Stateflow sequence viewer
+![image alt](Stateflow_sequence_viewer.png)
+Fig.2 Stateflow sequence viewer
 
 Free Mode: This mode is activated when the distance between vehicles is greater than a threshold value. The follower vehicle drives freely with a linear time-invariant vehicle model as the leader vehicle. A switch function block toggles between free mode and ACC mode.
 
