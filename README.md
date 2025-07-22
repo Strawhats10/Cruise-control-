@@ -1,7 +1,7 @@
 # Cruise-control
 # Overview
 The Adaptive Cruise Control (ACC) System developed in MATLAB and Simulink utilizes Model Predictive Control (MPC) to enable longitudinal speed control for the follower vehicle over a range of speed profiles. The ACC system aims to maintain a safe distance from the leader vehicle while optimizing the gas pedal actuation sequence for a comfortable ride with minimal overshoot.
-![image alt]()
+![image alt](Simulink_Model_of_Adaptive_Cruise_Control_System.png)
 Simulink Model of ACC System Fig.1 Simulink Model of Adaptive Cruise Control System
 
 # Model Design
