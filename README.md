@@ -17,6 +17,7 @@ The following steps provide an overview of how the complete ACC model was design
 
 * The model obtains the relative distance between the leader and follower vehicle.
 * The MPC block takes inputs such as set velocity, time gap, longitudinal velocity, and relative distance, and provides longitudinal acceleration as output.
+  
 3.Tuning MPC:
 
  This step focuses on optimizing the computation time and robustness of the MPC block.
